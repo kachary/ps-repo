@@ -31,6 +31,8 @@
 .NOTES 
     AUTHOR: System Center Automation Team 
     LASTEDIT: Dec 18, 2014  
+    LASTEDIT: Feb 19, 2019
+
 #> 
 workflow Connect-AzureVM 
 { 
