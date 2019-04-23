@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.developer.editorServicesLogLevel": "Verbose",
+    "powershell.startAutomatically": true,
+    "powershell.integratedConsole.showOnStartup": true,
+    "powershell.integratedConsole.focusConsoleOnExecute": false
+    
+}
