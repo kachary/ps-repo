@@ -1,3 +1,4 @@
-
-Get-BrokerMachine  
-  -AdminAddress "ptc-wbctxctl701.ad.moodys.net:80" -Filter "(((DNSName -like `"*vdi7*`")) -and (SessionSupport -eq `"SingleSession`"))" -MaxRecordCount 500 -Property @("DNSName","CatalogName","DesktopGroupName","AssociatedUserNames","InMaintenanceMode","PersistUserChanges","PowerState","RegistrationState","MachineName","Uid","DesktopUid","DesktopKind","HypervisorConnectionUid","HypHypervisorConnectionUid","ProvisioningType","PvdStage","LastDeregistrationReason","FaultState","Tags","CatalogUid","DesktopGroupUid","SessionCount","Capabilities","SupportedPowerActions") -ReturnTotalRecordCount -Skip 0 -SortBy "+DNSName"
+Get-BrokerMachine -AdminAddress "ptc-wbctxctl701.ad.moodys.net:80" 
+                  -Filter "(((DNSName -like `"*vdi7*`")) -and (SessionSupport -eq `"SingleSession`"))" 
+                  -MaxRecordCount 500 -Property @("DNSName","CatalogName","DesktopGroupName","AssociatedUserNames","InMaintenanceMode","PersistUserChanges","PowerState","RegistrationState","MachineName","Uid","DesktopUid","DesktopKind","HypervisorConnectionUid","HypHypervisorConnectionUid","ProvisioningType","PvdStage","LastDeregistrationReason","FaultState","Tags","CatalogUid","DesktopGroupUid","SessionCount","Capabilities","SupportedPowerActions") 
+                  -ReturnTotalRecordCount -Skip 0 -SortBy "+DNSName" | Export-Csv -Path .\vdiData.csv -NoTypeInformation Import-Csv -Path .\vdiData.csv
